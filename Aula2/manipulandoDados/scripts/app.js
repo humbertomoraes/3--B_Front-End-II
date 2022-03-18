@@ -8,15 +8,15 @@ document.querySelector('.jog2').innerText += ' ' + computador
 if (jogador1 == 1 && computador == 2) {
     document.querySelector('.Resultado').innerText += ' ' + "Ganhou o computador - Papel embrulha a Pedra"
 } else if (jogador1 == 1 && computador == 3) {
-    document.querySelector('.Resultado').innerText += ' ' + "Ganhou o jogador 1 - Pedra quebra a Tesoura"
+    document.querySelector('.Resultado').innerText += ' ' + "Você ganhou - Pedra quebra a Tesoura"
 } else if (jogador1 == 2 && computador == 1) {
-    document.querySelector('.Resultado').innerText += ' ' + "Ganhou o jogador 1 - Papel embrulha a Pedra"
+    document.querySelector('.Resultado').innerText += ' ' + "Você ganhou - Papel embrulha a Pedra"
 } else if (jogador1 == 2 && computador == 3) {
     document.querySelector('.Resultado').innerText += ' ' + "Ganhou o computador - Tesoura corta o Papel"
 } else if (jogador1 == 3 && computador == 1) {
     document.querySelector('.Resultado').innerText += ' ' + "Ganhou o computador - Pedra quebra a Tesoura"
 } else if (jogador1 == 3 && computador == 2) {
-    document.querySelector('.Resultado').innerText += ' ' + "Ganhou o jogador 1 - Tesoura corta o Papel"
+    document.querySelector('.Resultado').innerText += ' ' + "Você ganhou - Tesoura corta o Papel"
 } else {
     document.querySelector('.Resultado').innerText += ' ' + "Empatou<<<<"
 }
