@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Aula 3_Calculadora/css/style.css">
+    <script src="..//Aula 3_Calculadora/script/somar.js" type="text/javascript"></script>
+    <script src="../Aula 3_Calculadora/script/subtrair.js" type="text/javascript"></script>
+    <script src="../Aula 3_Calculadora/script/multiplicar.js" type="text/javascript"></script>
+    <script src="../Aula 3_Calculadora/script/dividir.js" type="text/javascript"></script>
+    <script src="../Aula 3_Calculadora/script/app.js" type="text/javascript"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao">C</button></td>
+                    <td><button class="botao"><</button></td>
+                    <td><button class="botao" onclick="dividir()">/</button></td>
+                    <td><button class="botao">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao">8</button></td>
+                    <td><button class="botao">9</button></td>
+                    <td><button class="botao">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">4</button></td>
+                    <td><button class="botao">5</button></td>
+                    <td><button class="botao">6</button></td>
+                    <td><button class="botao">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">1</button></td>
+                    <td><button class="botao">2</button></td>
+                    <td><button class="botao">3</button></td>
+                    <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function insert(num) {
+            document.getElementById('resultado').innerHTML = num;
+        }
+    </script>
+
+
+</body>
+
+</html>
