@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 195, 255, 0.3);
+}
+
+#tituloPag {
+    border: rgb(50, 12, 85) 5px solid;
+    background-color: aqua;
+    padding: 2% 0 2% 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formulario {
+    border: rgb(50, 12, 85) 5px solid;
+    padding-top: 15px;
+    padding-left: 30%;
+    background-color: rgb(116, 238, 238);
+}
+
+#titulo {
+    width: 48%;
+    height: 25px;
+    font-size: 20px;
+    padding-left: 2px;
+}
+
+#descricao {
+    width: 48%;
+    height: 25px;
+    font-size: 20px;
+    padding-left: 2px;
+}
+
+#url {
+    width: 40%;
+    height: 25px;
+    font-size: 15px;
+    padding-left: 2px;
+}
+
+#enviar {
+    width: 20%;
+    height: 25px;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 19%;
+}
+
+#resetar {
+    width: 20%;
+    height: 25px;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 19%;
+}
+
+#enviarNovos {
+    width: 20%;
+    height: 25px;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 19%;
+}
+
+.alunos {
+    text-align: left;
+    width: 100vw;
+    font-size: 1.3rem;
+    background-color: aqua;
+    color: black;
+    padding-left: 42%;
+}
