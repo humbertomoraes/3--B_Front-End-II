@@ -31,5 +31,5 @@ function calcular() {
 }
 
 function insert(num) {
-    document.getElementById('resultado').innerHTML = num;
+    document.getElementById('resultado').innerHTML = nota;
 }

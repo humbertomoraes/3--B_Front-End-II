@@ -1,61 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="../Checkpoint I/css/style.css">
-    <title>Checkpoint 1</title>
 </head>
 
-<body>
-    <h1 id="tituloPag">CheckPoint 1</h1>
+<body class="pai">
+    <header class="cabeca">
+        <h1>Digital House Brasil - Front End II</h1>
+    </header>
+    <aside>
+        <form class="form" action="">
+            <label for="titulo">Título do filme</label>
+            <input id="titulo" type="text">
+            <br>
+            <br>
+            <label for="descricao">Qual o sua opinião sobre o filme?</label>
 
-    <form class="formulario" action="">
-        <label for="titulo">Escolha um tí­tulo:</label>
-        <input id="titulo" type="text">
-        <br>
-        <br>
-        <label for="descricao">Descreva a coisa  :</label>
-        <input id="descricao" type="text">
-        <br>
-        <br>
-        <label for="url">Coloque uma URL de imagem:</label>
-        <input id="url" type="text">
-        <br>
-        <button id="enviar" type="submit"> Enviar </button>
-        <br>
-        <br>
-        <button type="reset" id="resetar">Limpar os campos.</button>
-        <br>
-        <br>
-        <button id="enviarNovos" type="reset">Adicionar novo card.</button>
+            <textarea id="descricao" cols="86" rows="5" maxlength="200"></textarea>
+            <br>
+            <br>
+            <label for="url">Coloque uma URL de imagem</label>
+            <input id="url" type="text">
+            <br>
+            <br>
+            <label for="genero" class="form z-label">Gênero do filme</label>
+            <select id="genero" class="form-select form-control">
+              <option value=""></option>
+              <option value="Drama" >Drama</option>
+              <option value="Comédia">Comédia</option>
+              <option value="Terror">Terror</option>
+              <option value="Ação" type="text">Ação</option>
+              <option value="Aventura">Aventura</option>
+              <option value="Outros">Outros</option>
+            </select>
+            <br>
+            <br>
+            <label for="nota">Qual a nota do filme?</label>
+            <input id="nota" type="number" min="0" max="10">
+            <br>
+            <br>
+            <div class="botao">
+                <button id="enviar" type="submit">Enviar</button>
+                <br>
+                <br>
+                <button type="reset" id="resetar">Limpar campos</button>
+            </div>
+            <br>
+            <br>
+        </form>
 
-    </form>
 
-    <div id="container">
-        <div id="card">
-            <h2 id="h2Atual"></h2>
-            <img id="imagemAtual" src="" alt="" srcset="">
-            <p id="pAtual"></p>
+
+
+
+
+
+
+    </aside>
+    <main class="corpo">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12" id="container">
+            <div class="card1" id="card1">
+                <h2></h2>
+                <img class="card-img-top img-fluid" src="" />
+
+
+            </div>
         </div>
-    </div>
+    </main>
 
-    <span class="ponte">
-        
-        <ul class="alunos">ALUNOS:
+
+    <footer class="alunos">
+        <ul>ALUNOS Checkpoint I:
             <li>Humberto Cicero Cesar de Moraes</li>
-            <li>Henrique Santos</li>
-            <li>Erick Niciolli</li>
+            <li>Marcelo Pacholak</li>
+            <li>Érick Rodrigo da Silva Cardoso</li>
 
         </ul>
-
+    </footer>
 
 
     <script src="../Checkpoint I/scripts/script.js"></script>
-
-
 </body>
 
 </html>
